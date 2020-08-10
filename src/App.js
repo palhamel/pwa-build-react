@@ -17,7 +17,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Videos</h1>
+        <div>
+          <h1>Some Videos</h1>
+          <h4>all fetched via api</h4>
+        </div>
       </header>
       {data.map(videoinfo => (
         <div key={videoinfo.id}>
@@ -25,8 +28,6 @@ function App() {
           <video height={200} controls src={videoinfo.video_url} />
         </div>
       ))}
-
-
     </div>
   );
 }

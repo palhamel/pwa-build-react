@@ -19,10 +19,10 @@ function App() {
       <header>
         <div>
           <h1>Some Videos</h1>
-            <h3>all fetched via api</h3>
+          <h2>all fetched via api</h2>
         </div>
       </header>
-      {data.map(videoinfo => (
+      {data.map((videoinfo) => (
         <div key={videoinfo.id}>
           <h3>{videoinfo.name}</h3>
           <video height={200} controls src={videoinfo.video_url} />
